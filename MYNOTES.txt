@@ -1,0 +1,25 @@
+php artisan make:model Project -fm
+php artisan make:model Task -fm
+
+php artisan make:controller ProjectController --model=Project --requests --resource
+php artisan make:controller TaskController --model=Task --requests --resource
+php artisan make:controller UserController --model=User --requests --resource
+
+php artisan make:resource ProjectResource
+php artisan make:resource TaskResource
+php artisan make:resource UserResource
+
+* install an icon for the design
+* restart npm run dev everytime a new packages from npm was installed
+* search the web for heroicon docs for more info
+npm install @heroicons/react 
+
+* php artisan storage:link
+
+* ctrl+shift+f for search via vs code
+
+* make sure that the customize route comes first before the resource, check the web.php
+
+* php artisan make:controller DashboardController
+
+4.55
